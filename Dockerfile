@@ -8,8 +8,7 @@ RUN apk add --no-cache python3 && \
 # rm -r /root/.cache
     
 # clean up
- apk del --purge \
-	build-dependencies && \
+ apk del --purge && \
 rm -r /usr/lib/python*/ensurepip && \
 rm -rf \
 	/root/.cache \
