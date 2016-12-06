@@ -6,7 +6,7 @@ ENV IMAGE alpine
 RUN \
  apk add --no-cache \
 	curl \
-	py-pip \
+	pip3 \
 	python3 \
 	wget && \
 
@@ -21,7 +21,7 @@ RUN \
  pip install --no-cache-dir -U \
 	pip && \
  LIBRARY_PATH=/lib:/usr/lib \
- pip install --no-cache-dir -U \
+ pip3 install --no-cache-dir -U \
 	setuptools \
 	virtualenv && \
 
