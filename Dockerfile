@@ -1,3 +1,3 @@
-FROM python:3.5.2-alpine
+FROM python:3.5.2
 
-CMD [ "/bin/sh", "python /code/test.py" ]
+CMD [ "python", "/code/test.py" ]
